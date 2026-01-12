@@ -100,33 +100,47 @@ function populateExperience() {
   const timelineContainer = document.getElementById('experience-timeline');
   if (!timelineContainer || !PORTFOLIO_DATA.experience) return;
 
-  timelineContainer.innerHTML = PORTFOLIO_DATA.experience.map((exp, index) => `
-    <div class="experience-item reveal" style="transition-delay: ${index * 0.1}s">
-      <div class="experience-date-side">
-        <span class="experience-date">${exp.period}</span>
-        <span class="experience-location">${exp.location} · ${exp.type}</span>
-      </div>
-
-      <div class="experience-dot"></div>
-
-      <div class="experience-content">
-        <div class="experience-card">
-          <div class="experience-company">
-            <div class="experience-company-logo">${exp.logo}</div>
-            <span class="experience-company-name">${exp.company}</span>
+  timelineContainer.innerHTML = PORTFOLIO_DATA.experience.map((exp, index) => {
+    const cardContent = `
+      <div class="experience-card">
+        <div class="experience-company">
+          <div class="experience-company-logo">
+            ${exp.logoImage 
+              ? `<img src="${exp.logoImage}" alt="${exp.company}" class="experience-company-logo-img">` 
+              : exp.logo
+            }
           </div>
-          <h3 class="experience-role">${exp.role}</h3>
-          <p class="experience-description">${exp.description}</p>
-          <ul class="experience-achievements">
-            ${exp.achievements.map(a => `<li>${a}</li>`).join('')}
-          </ul>
-          <div class="experience-tech">
-            ${exp.technologies.map(t => `<span class="experience-tech-tag">${t}</span>`).join('')}
-          </div>
+          <span class="experience-company-name">${exp.company}</span>
+        </div>
+        <h3 class="experience-role">${exp.role}</h3>
+        <p class="experience-description">${exp.description}</p>
+        <ul class="experience-achievements">
+          ${exp.achievements.map(a => `<li>${a}</li>`).join('')}
+        </ul>
+        <div class="experience-tech">
+          ${exp.technologies.map(t => `<span class="experience-tech-tag">${t}</span>`).join('')}
         </div>
       </div>
-    </div>
-  `).join('');
+    `;
+
+    return `
+      <div class="experience-item reveal" style="transition-delay: ${index * 0.1}s">
+        <div class="experience-date-side">
+          <span class="experience-date">${exp.period}</span>
+          <span class="experience-location">${exp.location} · ${exp.type}</span>
+        </div>
+
+        <div class="experience-dot"></div>
+
+        <div class="experience-content">
+          ${exp.url 
+            ? `<a href="${exp.url}" target="_blank" rel="noopener" class="experience-card-link">${cardContent}</a>`
+            : cardContent
+          }
+        </div>
+      </div>
+    `;
+  }).join('');
 }
 
 function populateSkills() {
