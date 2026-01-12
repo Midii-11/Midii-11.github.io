@@ -209,20 +209,20 @@ const PORTFOLIO_DATA = {
       title: "ObsidianSecure",
       category: "Security / Encryption",
       description: "ObsidianSecure provides maximum security for storing credentials and confidential notes in Obsidian through complete vault encryption. A privacy-first solution for secure note-taking.",
-      technologies: ["Python", "Encryption", "Obsidian API", "Security"],
+      technologies: ["Python", "Encryption", "Security"],
       github: "https://github.com/Midii-11/obsidian_secure",
       demo: null,
-      image: null,
+      image: "assets/images/ObsidianSecure.png",
       featured: true
     },
     {
       title: "LinkedIn AutoReply",
       category: "Automation / AI",
-      description: "An intelligent automation tool that helps manage LinkedIn communications efficiently. Streamlines professional networking through smart automated responses.",
-      technologies: ["Python", "Automation", "LinkedIn API", "AI"],
+      description: "LinkedIn AutoReply is a Firefox browser extension that helps professionals craft thoughtful, personalized responses to LinkedIn messages quickly and efficiently. Choose from multiple AI providers - Azure OpenAI, Anthropic Claude, Google Gemini, or run locally with Ollama - to generate contextually appropriate replies based on your professional profile and custom prompt templates.",
+      technologies: ["Python", "Automation", "Web Extensions", "AI"],
       github: "https://github.com/Midii-11/Linkedin_AutoReply",
       demo: null,
-      image: null,
+      image: "assets/images/LinkedinAutoReply.png",
       featured: true
     }
   ],
