@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arthur Dorzee - AI Engineer specializing in Generative AI solutions for regulated industries. Based in Brussels.">
+  <meta name="keywords" content="AI Engineer, Machine Learning, Generative AI, LangChain, Azure, Python, Brussels">
+  <meta name="author" content="Arthur Dorzee">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arthur Dorzee - AI Engineer">
+  <meta property="og:description" content="AI Consultant and Machine Learning Engineer specializing in Generative AI solutions for regulated industries.">
+  <meta property="og:image" content="assets/images/profile.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/profile.png">
+
+  <title>Arthur Dorzee | AI Engineer</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/sections/navbar.css">
+  <link rel="stylesheet" href="css/sections/hero.css">
+  <link rel="stylesheet" href="css/sections/about.css">
+  <link rel="stylesheet" href="css/sections/experience.css">
+  <link rel="stylesheet" href="css/sections/skills.css">
+  <link rel="stylesheet" href="css/sections/projects.css">
+  <link rel="stylesheet" href="css/sections/education.css">
+  <link rel="stylesheet" href="css/sections/contact.css">
+  <link rel="stylesheet" href="css/sections/footer.css">
+</head>
+<body>
+  <!-- ============================================
+       NAVBAR
+       ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="navbar-logo">
+        Arthur<span>.</span>
+      </a>
+
+      <div class="navbar-menu" id="navbar-menu">
+        <ul class="navbar-nav" id="navbar-nav">
+          <!-- Navigation items populated by JS -->
+        </ul>
+      </div>
+
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-background">
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="hero-badge-dot"></span>
+          <span id="hero-badge-text">Open to Opportunities</span>
+        </div>
+
+        <h1 class="hero-title reveal stagger-1">
+          <span class="hero-title-line" id="hero-title-1">Hi, I'm Arthur</span>
+          <span class="hero-title-line hero-title-highlight" id="hero-title-2">AI Engineer</span>
+        </h1>
+
+        <p class="hero-description reveal stagger-2" id="hero-description">
+          AI Consultant and Machine Learning Engineer specializing in the design and deployment of Generative AI solutions for regulated industries.
+        </p>
+
+        <div class="hero-buttons reveal stagger-3">
+          <a href="#contact" class="btn btn-primary" id="hero-cta-primary">
+            <span>Get in Touch</span>
+            <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#projects" class="btn btn-secondary" id="hero-cta-secondary">
+            <span>View Projects</span>
+          </a>
+        </div>
+
+        <div class="hero-stats reveal stagger-4" id="hero-stats">
+          <!-- Stats populated by JS -->
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-right">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-ring"></div>
+          <div class="hero-image-ring-2"></div>
+          <img src="assets/images/profile.png" alt="Arthur Dorzee" class="hero-image" id="hero-image">
+
+          <div class="hero-floating-icons">
+            <div class="hero-float-icon">🐍</div>
+            <div class="hero-float-icon">☁️</div>
+            <div class="hero-float-icon">🤖</div>
+            <div class="hero-float-icon">🔗</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll Down</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT SECTION
+       ============================================ -->
+  <section class="about section" id="about">
+    <div class="container about-container">
+      <div class="about-visual reveal-left">
+        <div class="about-image-card">
+          <div class="about-code-block">
+            <div class="about-code-header">
+              <span class="about-code-dot"></span>
+              <span class="about-code-dot"></span>
+              <span class="about-code-dot"></span>
+            </div>
+            <div class="about-code-content">
+              <span class="keyword">class</span> <span class="function">AIEngineer</span><span class="bracket">()</span>:<br>
+              &nbsp;&nbsp;<span class="keyword">def</span> <span class="function">__init__</span><span class="bracket">(</span><span class="property">self</span><span class="bracket">)</span>:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">self</span>.name = <span class="string">"Arthur"</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">self</span>.role = <span class="string">"AI Engineer"</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">self</span>.skills = <span class="bracket">[</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"GenAI"</span>, <span class="string">"LLMs"</span>,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Azure"</span>, <span class="string">"Python"</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="bracket">]</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">self</span>.passion = <span class="string">"Building<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;intelligent solutions"</span>
+            </div>
+          </div>
+
+          <div class="about-float-card about-float-card-1">
+            <div class="about-float-card-icon">🎯</div>
+            <span class="about-float-card-text">Problem Solver</span>
+          </div>
+
+          <div class="about-float-card about-float-card-2">
+            <div class="about-float-card-icon">💡</div>
+            <span class="about-float-card-text">Innovation Driven</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content reveal-right">
+        <span class="about-label">About Me</span>
+        <h2 class="about-title">Crafting <span>AI Solutions</span> for the Future</h2>
+
+        <div id="about-paragraphs">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="about-highlights" id="about-highlights">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="about-languages" id="about-languages">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       EXPERIENCE SECTION
+       ============================================ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">My journey building AI solutions for enterprise clients</p>
+      </div>
+
+      <div class="experience-timeline" id="experience-timeline">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SKILLS SECTION
+       ============================================ -->
+  <section class="skills section" id="skills">
+    <div class="container skills-container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">The tools and technologies I work with</p>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="skills-featured reveal">
+        <h3 class="skills-featured-title">Core Technologies</h3>
+        <div class="skills-featured-grid" id="skills-featured">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PROJECTS SECTION
+       ============================================ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Some of my open-source work and personal projects</p>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="projects-more reveal">
+        <a href="https://github.com/Midii-11" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>View All on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       EDUCATION SECTION
+       ============================================ -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic foundation and continuous learning</p>
+      </div>
+
+      <div class="education-grid" id="education-grid">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- Certifications (if any) -->
+      <div class="certifications" id="certifications-container" style="display: none;">
+        <h3 class="certifications-title">Certifications</h3>
+        <div class="certifications-grid" id="certifications-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section class="contact section" id="contact">
+    <div class="container contact-container">
+      <div class="contact-info reveal-left">
+        <h2 class="contact-title">Let's <span>Connect</span></h2>
+        <p class="contact-description">
+          Interested in working together or have a question? Feel free to reach out. I'm always open to discussing new opportunities and interesting projects.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="contact-detail-content">
+              <span class="contact-detail-label">Email</span>
+              <span class="contact-detail-value">
+                <a href="mailto:arthur.dorzee@proton.me" id="contact-email">arthur.dorzee@proton.me</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div class="contact-detail-content">
+              <span class="contact-detail-label">Location</span>
+              <span class="contact-detail-value" id="contact-location">Brussels, Belgium</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="contact-detail-content">
+              <!-- <span class="contact-detail-label">Phone</span> -->
+              <span class="contact-detail-value">
+                <a href="tel:+32..." id="contact-phone">Message me first, we will talk number later 😉</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social" id="contact-social">
+          <a href="https://www.linkedin.com/in/arthur-dorz%C3%A9e-8a3492136/" target="_blank" rel="noopener" class="contact-social-link" aria-label="LinkedIn">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg>
+          </a>
+          <a href="https://github.com/Midii-11" target="_blank" rel="noopener" class="contact-social-link" aria-label="GitHub">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="mailto:arthur.dorzee@proton.me" class="contact-social-link" aria-label="Email">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper reveal-right">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mnjjakge" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project or inquiry..." required></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">
+              <span>Send Message</span>
+              <svg class="icon icon-sm" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polygon points="22 2 15 22 11 13 2 9 22 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="form-success" id="form-success">
+          <div class="form-success-icon">✓</div>
+          <h3 class="form-success-title">Message Sent!</h3>
+          <p class="form-success-text">Thank you for reaching out. I'll get back to you soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" id="footer">
+    <div class="container footer-container">
+      <a href="#" class="footer-logo">
+        Arthur<span>.</span>
+      </a>
+
+      <ul class="footer-nav" id="footer-nav">
+        <!-- Populated by JS -->
+      </ul>
+
+      <div class="footer-social" id="footer-social">
+        <a href="https://www.linkedin.com/in/arthur-dorz%C3%A9e-8a3492136/" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn">
+          <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg>
+        </a>
+        <a href="https://github.com/Midii-11" target="_blank" rel="noopener" class="footer-social-link" aria-label="GitHub">
+          <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="mailto:arthur.dorzee@proton.me" class="footer-social-link" aria-label="Email">
+          <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © <span id="footer-year">2025</span> <a href="#">Arthur Dorzee</a>. All rights reserved.
+        </p>
+        <p class="footer-made">
+          Made with <span class="footer-made-heart">♥</span> in Brussels
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <a href="#contact" class="lets-talk-floating" id="lets-talk-floating" aria-label="Let's Talk">
+    <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+  </a>
+  
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- JavaScript Files -->
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
