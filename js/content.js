@@ -33,7 +33,7 @@ const PORTFOLIO_DATA = {
 
   // === HERO SECTION ===
   hero: {
-    badge: "Open to Opportunities",
+    badge: "Let's chat!",
     titleLines: [
       "Hi, I'm Arthur",
       "AI Engineer"
