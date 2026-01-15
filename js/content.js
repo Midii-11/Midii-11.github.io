@@ -36,7 +36,7 @@ const PORTFOLIO_DATA = {
     badge: "Let's chat!",
     titleLines: [
       "Hi, I'm Arthur",
-      "AI Engineer"
+      "AI Engineer - Full Stack Dev"
     ],
     description: "AI Consultant and Machine Learning Engineer specializing in the design and deployment of Generative AI solutions for regulated industries, with a strong focus on banking and financial services.",
 
