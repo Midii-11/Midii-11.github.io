@@ -221,7 +221,7 @@ const PORTFOLIO_DATA = {
       technologies: ["Python", "Encryption", "Security"],
       github: "https://github.com/Midii-11/obsidian_secure",
       demo: null,
-      image: "assets/Projects/images/ObsidianSecure.png",
+      image: "assets/images/Projects/ObsidianSecure.png",
       featured: true
     },
     {
@@ -231,7 +231,7 @@ const PORTFOLIO_DATA = {
       technologies: ["Python", "Automation", "Web Extensions", "AI"],
       github: "https://github.com/Midii-11/Linkedin_AutoReply",
       demo: null,
-      image: "assets/Projects/images/LinkedinAutoReply.png",
+      image: "assets/images/Projects/LinkedinAutoReply.png",
       featured: true
     }
   ],
